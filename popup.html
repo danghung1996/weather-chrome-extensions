@@ -9,26 +9,22 @@
 
 <body>
     <div class="container-fluid">
+        <!-- <div id="loading" class="loading">
+            <img id="loading-image" src="images/icon-loading.gif" alt="Loading..." />
+        </div> -->
         <div class="current-temperature" id="current-temperature">
-            20°
+            <div class="detail-current-temperature">
+                20°
+            </div>
+            <div class="current-date">
+            </div>
         </div>
         <div class="row range-temperature" id="range-temperature">
-            <canvas id="myChart" width="450" height="100"></canvas>
+            <canvas id="myChart" class="my-chart" width="450px" height="auto"></canvas>
         </div>
-        <div class="row temperature-next-day">
-            <div class="col-4">
-                20
-            </div>
-            <div class="col-4">
-                20
-            </div>
-            <div class="col-4">
-                20
-            </div>
+        <div class="row temperature-next-day" id="temperature-next-day">
         </div>
-        <div class="location">
-
-        </div>
+        <!-- <button class="btn btn-info" onclick="test()">Test</button> -->
 
     </div>
     <script src="./scripts/jquery.js"></script>
